@@ -1,29 +1,3 @@
-### A DNS and Proxy Server in C# (Class Library .NET 6)
-
-_I'm just sharing this library for developers due to recieved requests.
-It's a multi platform DNS and Proxy Server. Target Platform: Windows.
-Tested once on Android. You can make it fully compatible with your own target platform._
-
-[Library Directory Address.](https://github.com/msasanmh/MsmhAgnosticServer/tree/main/MsmhToolsClass/MsmhToolsClass/MsmhAgnosticServer)<br>
-
-Nuget Package:<br>
-[https://www.nuget.org/packages/MsmhAgnosticServer/](https://www.nuget.org/packages/MsmhAgnosticServer/)<br>
-
-DNS Servers: DNS-Over-UDP, DNS-Over-TCP, DNS-Over-HTTPS (DoH)<br>
-DNS Clients: DNS-Over-UDP, DNS-Over-TCP, DNS-Over-HTTPS (DoH), DNS-Over-TLS (DoT), DNSCrypt.<br>
-Proxy Servers:<br>
-    HTTP (Domain, IPv4, IPv6) (Get, Post, etc)<br>
-    HTTPS (Domain, IPv4, IPv6) (Post, etc)<br>
-    SOCKS4 (IPv4) (Connect, Bind)<br>
-    SOCKS4A (Domain, IPv4) (Connect, Bind)<br>
-    SOCKS5 (Domain, IPv4, IPv6) (Connect, Bind, UDP)<br>
-
-DNS Server Features: DNS Records modification, Upstream Proxy, Text based DNS Rules (Block, Fake DNS, Upstream Proxy per domain)<br>
-Proxy Server Features: Upstream Proxy, Fragment, Fake SNI, Text based Proxy Rules (Block, Fake DNS, Fake SNI, Custom DNS, Upstream Proxy per domain)<br>
-
-Smart DNS Server: Supported - You can create an Smart DNS Server using DNS Rules (Just modify all A Records and AAAA Records To Your Proxy Server IP).<br>
-
-Running a DNS and Proxy Server on port 8080 example:
 ```C#
 // Create Agnostic Server
 MsmhAgnosticServer server = new();
